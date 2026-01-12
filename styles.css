@@ -7,7 +7,7 @@
 }
 
 * {
-    font-family: "Courier New", Courier, monospace;
+    font-family: monospace;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -15,16 +15,16 @@
 
 /*===============================BODY===========================*/
 body {
+    font-family: monospace;
     background: var(--graphite);
     min-height: 100vh;
     color: white;
     font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
 /*===============================HEADER===========================*/
-header {
-    background-color: var(--teal);
-}
+
 .header-top {
     display: flex;
     align-items: center;
@@ -58,7 +58,6 @@ header {
 }
 
 
-/* Responsive adjustments for header nav */
 @media (max-width: 600px) {
     .site-header .header-nav ul {
         flex-direction: row;
@@ -68,23 +67,23 @@ header {
 }
 
 
-
 h1, h2,h3 {
     font-family: monospace, 'Courier New';
     margin-bottom: 0.5rem;
-    font-size:2rem;
+    font-size:3rem;
 }
+
 h3 a {
-  color: white; /* same as heading text */
+  color: white;
   font-weight: inherit;
   text-decoration:dashed;
 }
 
 main img{
-    max-width: 100%;   /* image will never exceed its container width */
-    height: auto;      /* maintain aspect ratio */
-    display: block;    /* remove inline spacing */
-    margin: 10px auto;    /* center if needed */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
 }
 /*===============================NAV===========================*/
 nav {
@@ -210,7 +209,7 @@ main {
 /*===============================GALLERY===========================*/
 div.gallery-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     /*grid-auto-rows: minmax(300px, auto);*/
     gap: 1.5em;
     margin: 1em 0;
@@ -264,11 +263,7 @@ a {
 }
 
 p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
     color: white
-}
-
-* {
-/* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat926.ani), url(https://cur.cursors-4u.net/nature/nat-10/nat926.png), auto !important;} /* End https://www.cursors-4u.com */
 }
